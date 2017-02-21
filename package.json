@@ -1,7 +1,7 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "redux-test",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "to learn redux",
   "main": "server.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,9 @@
   "keywords": [
     "express",
     "webpack",
-    "node"
+    "node",
+    "react",
+    "redux"
   ],
   "author": "Andy Ashall",
   "license": "MIT",
