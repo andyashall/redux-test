@@ -1,0 +1,11 @@
+.container {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 700px;
+	padding-top: 100px;
+	background-color: #fff;
+	min-height: 100vh;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,.08);
+}

@@ -1,0 +1,54 @@
+.container {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	border-top: 1px solid rgba(0,0,0,.09);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 99;
+}
+
+.container form {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.container input, .container select {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1rem;
+	border: 0;
+}
+
+.container button {
+	background-color: #f1f1f1;
+	border: 0;
+	width: 100%;
+}
+
+.container input:focus, .container select:focus, .container button:focus {
+	outline: none;
+}
+
+.col1, .col2, .col3 {
+	/*display: table-column;*/
+	display: inline-flex;
+}
+
+.col1 {
+	/*display: table-column;*/
+	display: inline-flex;
+	width: 10%;
+}
+
+.col2 {
+	width: 80%;
+}
+
+.col3 {
+	width: 10%;
+}

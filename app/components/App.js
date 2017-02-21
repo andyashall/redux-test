@@ -7,7 +7,7 @@ import Head from './Header'
 const App = () => (
   <div>
   	<Head />
-  	<div style={{'marginTop': '80px'}}>
+  	<div>
     	<AddTodo />
     	<VisibleTodoList />
     	<Footer />

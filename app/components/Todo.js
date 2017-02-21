@@ -1,12 +1,11 @@
 import React, { PropTypes } from 'react'
 
 const Todo = ({ onClick, completed, text, username }) => (
-  <div>
-  <li onClick={onClick} style={{textDecoration: completed ? 'line-through' : 'none'}} >
-    {text}
+  <li style={{textDecoration: completed ? 'line-through' : 'none'}} >
+    <input type="checkbox" onClick={onClick} />
+    <span contentEditable={"true"}>{text}</span>
+    <div style={{color: 'rgba(0,0,0,.6)'}}>{username}</div>
   </li>
-  <div style={{color: 'rgba(0,0,0,.6)'}}>{username}</div>
-  </div>
 )
 
 Todo.propTypes = {

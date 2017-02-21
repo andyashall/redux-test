@@ -1,19 +1,24 @@
 import React, { PropTypes } from 'react'
+import style from './Link.css'
 
 const Link = ({ active, children, onClick }) => {
-  if (active) {
-    return <span>{children}</span>
-  }
+  let buttClass;
+  // if (active) {
+  //   buttClass = style.a
+  //   return <span className={style.a}>{children}</span>
+  // } else {
+  //   buttClass= style.not
+  // }
 
   return (
-    <a href="#"
+    <div className={style.selection + (active ? " " + style.a : " " + style.not)}
        onClick={e => {
          e.preventDefault()
          onClick()
        }}
     >
       {children}
-    </a>
+    </div>
   )
 }
 
