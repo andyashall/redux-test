@@ -1,12 +1,22 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
+import style from './Header.css'
 
 // store.subscribe(() =>
 //   console.log(store.getState())
 // )
 
 let Head = ({username}) => (
-	<div style={{position: 'fixed', width: '100%', top: 0, height: '50px', 'borderBottom': '1px solid rgba(0,0,0,.08)', 'zIndex': 99, 'backgroundColor': '#fff'}}>
+	<div className={style.head}>
+		<div className={style.left}>
+			◀ Previous Week
+		</div>
+		<div className={style.middle}>
+			Mon 19/02/17
+		</div>
+		<div className={style.right}>
+			Next Week ▶
+		</div>
 		{username}
 	</div>
 )

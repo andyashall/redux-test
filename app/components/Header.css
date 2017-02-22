@@ -1,0 +1,35 @@
+.head {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 50px;
+	border-bottom: 1px solid rgba(0,0,0,.08);
+	z-index: 99;
+	background-color: #fff;
+	color: rgba(0,0,0,.8);
+	font-size: .8rem;
+	transition: .5s ease transform;
+}
+
+.left, .middle, .right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.left:hover, .right:hover {
+	cursor: pointer;
+}
+
+.left {
+	left: 20px;
+}
+
+.middle {
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.right {
+	right: 20px;
+}

@@ -29,7 +29,8 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^5.0.2",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "timeago.js": "^2.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",

@@ -4,7 +4,7 @@ import style from './TodoList.css'
 
 const TodoList = ({ todos, onTodoClick }) => (
   <div className={style.container}>
-    <ul>
+    <ul className={style.ul}>
       {todos.map(todo =>
         <Todo
           key={todo.id}

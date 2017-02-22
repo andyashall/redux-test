@@ -1,0 +1,24 @@
+.tick {
+	display: table-cell;
+	padding-right: 10px;
+	font-family: 'Material Icons';
+}
+
+.tick:hover {
+	cursor: pointer;
+	color: #3c3c3c;
+}
+
+.list {
+	margin-bottom: .5rem;
+	display: table-row;
+}
+
+.p {
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+}
+
+.p:focus {
+	outline: none;
+}
