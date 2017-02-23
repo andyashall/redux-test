@@ -11,6 +11,25 @@ export const addTodo = (text, username) => {
   }
 }
 
+export const getPosts = (data) => {
+  return {
+    type: 'GET_POSTS',
+    data
+  }
+}
+
+export const morePosts = (prevData, data) => {
+  var allData = {
+    prev: prevData,
+    new: data
+  }
+  return {
+    type: 'MORE_POSTS',
+    allData
+  }
+}
+
+
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',

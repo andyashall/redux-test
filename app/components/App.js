@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
-import Head from './Header'
+import Head from './Header.js'
 
 const App = () => (
   <div>

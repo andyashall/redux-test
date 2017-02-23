@@ -10,7 +10,7 @@ const Todo = ({ onClick, completed, text, username }) => (
   <li className={style.list}>
     <div className={style.tick} style={{color: completed ? 'green' : 'grey'}} onClick={onClick}>done</div>
     <div style={{display: "table-cell"}}>
-    	<p className={style.p} style={{textDecoration: completed ? 'line-through' : 'none'}} contentEditable={"true"}>{text}</p>
+    	<p className={style.p} style={{textDecoration: completed ? 'line-through' : 'none'}} >{text}</p>
     	<div style={{color: 'rgba(0,0,0,.6)', fontSize: ".8rem"}}>{getTime(username)}</div>
     </div>
   </li>
